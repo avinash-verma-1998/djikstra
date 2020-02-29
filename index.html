@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navarea -->
+    <div class="nav-area">
+      <button class="btn add active" onclick="add()">
+        <span title="hold ctrl key and drag to add">add Obstacles</span>
+      </button>
+      <button class="btn remove" onclick="remove()">
+        <span title="hold  ctrl key and drag to remove">remove Obstacles</span>
+      </button>
+
+      <!-- <label for="size"> Enter size for cells</label>
+      <input type="number" id="size" /> -->
+      <p class="info">
+        !! hold ctrl and move mouse over cells to add or remove obstacles.
+      </p>
+      <p>
+        It finds path from top left to bottom right. Using djikstra algorithm.
+      </p>
+    </div>
+
+    <div class="container">
+      <canvas id="canvas" width="700" height="700"></canvas>
+      <button class="btn active" onclick="djisktra()">find</button>
+      <a href="" class="link">reset</a>
+    </div>
+  </body>
+  <script src="./djikstra.js"></script>
+</html>
